@@ -1,9 +1,9 @@
 output "resource_group_name" {
-  value = azurerm_resource_group.cmdockerlab1.name
+  value = azurerm_resource_group.rg.name
 }
 
 output "Region" {
-  value = azurerm_resource_group.cmdockerlab1.location
+  value = azurerm_resource_group.rg.location
 }
 
 output "azurerm_public_ip" {
