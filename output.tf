@@ -10,18 +10,18 @@ output "azurerm_public_ip" {
   value = azurerm_public_ip.cmdockerlab1.ip_address 
 }
 
-output "first_VM" {
+output "1st_VM" {
   value = azurerm_virtual_machine.cmdockerlab1[0].name
 }
 
-output "second_VM" {
+output "2nd_VM" {
   value = azurerm_virtual_machine.cmdockerlab1[1].name
 }
 
-output "private_ip_first_VM" {
+output "private_ip_1st_VM" {
   value = azurerm_network_interface.cmdockerlab1[0].private_ip_address
 }
 
-output "private_ip_second_VM" {
+output "private_ip_2nd_VM" {
   value = azurerm_network_interface.cmdockerlab1[1].private_ip_address
 }
